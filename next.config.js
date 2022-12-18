@@ -11,12 +11,15 @@ if (isGithubActions) {
 
   assetPrefix = `/${repo}/`
   basePath = `/${repo}`
+  const nextConfig = {
+    reactStrictMode: true,
+    assetPrefix: assetPrefix,
+    basePath: basePath,
+  }
 }
-
 const nextConfig = {
   reactStrictMode: true,
-  assetPrefix: assetPrefix,
-  basePath: basePath,
 }
+
 
 module.exports = nextConfig
