@@ -14,6 +14,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <h1> Hello Tomathy</h1>
+        <p> This is my website in which i site all my webs</p>
       </main>
     </>
   )
