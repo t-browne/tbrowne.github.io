@@ -1,0 +1,9 @@
+.button {
+    width: fit-content;
+    box-shadow: 4px 4px 4px red;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: 1px;
+    border-color: white;
+}

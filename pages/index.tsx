@@ -1,10 +1,12 @@
 import Head from 'next/head'
-import { Inter } from '@next/font/google'
+import React from 'react';
+import Button from './button';
 import styles from '../styles/Home.module.css'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const buttonOneContent = 'My Personal Page';
+  const buttonTwoContent = 'Glorpy :)';
   return (
     <>
       <Head>
@@ -13,8 +15,15 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main className={styles.main}>
-        <h1> Hello Tomathy</h1>
-        <p> This is my website in which i site all my webs</p>
+        <div className={styles.header}>
+          <h1> Hello Tomathy</h1>
+          <hr/>
+          <p> This is my website in which i site all my webs</p>
+        </div>
+        <div className={styles.buttonContainer}>
+          <Button destination="https://tbrowne.me" content={buttonOneContent}/>
+          <Button destination='https://natty-light.github.io' content={buttonTwoContent}/>
+        </div>
       </main>
     </>
   )
