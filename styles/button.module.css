@@ -1,9 +1,17 @@
 .button {
     width: fit-content;
-    box-shadow: 4px 4px 4px red;
+    color: #b4b4b4;
     padding: 4px;
     padding-left: 8px;
     padding-right: 8px;
-    border: 1px;
-    border-color: white;
+    border: 2px;
+    border-color:#b4b4b4;
+    border-style: solid;
+    border-radius: 10px;
+    transition: ease .2s;
+}
+
+.button:hover {
+    background-color: #b4b4b4;
+    color: #282830;
 }

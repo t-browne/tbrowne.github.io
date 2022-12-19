@@ -2,11 +2,29 @@ import Head from 'next/head'
 import React from 'react';
 import Button from './button';
 import styles from '../styles/Home.module.css'
+import { ButtonProps } from './types';
 
+const buttonContent: ButtonProps[] = [
+  {
+    destination: '',
+    content: 'Mastodon'
+  },
+  {
+    destination: '',
+    content: 'Email'
+  },
+  {
+    destination: '',
+    content: 'Instagram'
+  },
+  {
+    destination: '',
+    content: 'Github'
+  }
+]
 
 export default function Home() {
-  const buttonOneContent = 'My Personal Page';
-  const buttonTwoContent = 'Glorpy :)';
+
   return (
     <>
       <Head>
@@ -15,15 +33,23 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.header}>
-          <h1> Hello Tomathy</h1>
-          <hr/>
-          <p> This is my website in which i site all my webs</p>
+        <div className={styles.body}>
+          <div className={styles.largeText}>
+            <div className={styles.whiteText}>
+              Hello, I'm
+            </div>
+            <div className={styles.greenText}>
+              Tom
+            </div>
+          </div>
+          <div className={styles.smallText}>
+            I write code and design things sometimes
+          </div>
+          <div className={styles.buttonContainer}>
+          {...buttonContent.map((b) => <Button content={b.content} destination={b.destination}/>)}
         </div>
-        <div className={styles.buttonContainer}>
-          <Button destination="https://tbrowne.me" content={buttonOneContent}/>
-          <Button destination='https://natty-light.github.io' content={buttonTwoContent}/>
         </div>
+
       </main>
     </>
   )

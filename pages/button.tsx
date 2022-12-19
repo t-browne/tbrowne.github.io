@@ -1,3 +1,4 @@
+import { ButtonProps } from './types';
 import styles from '../styles/button.module.css'
 
 const handleButtonClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, destination: string) => {
@@ -5,11 +6,6 @@ const handleButtonClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, d
     window.open(destination);
   }
   
-interface ButtonProps {
-  destination: string;
-  content: string;
-}
-
 const Button: React.FC<ButtonProps> = ({ destination, content}) => {
   return (
     <>
