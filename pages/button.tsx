@@ -1,4 +1,4 @@
-import { ButtonProps } from './types';
+import { ButtonProps } from '../types/types';
 import styles from '../styles/button.module.css'
 
 const handleButtonClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, destination: string) => {

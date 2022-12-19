@@ -2,7 +2,7 @@ import Head from 'next/head'
 import React from 'react';
 import Button from './button';
 import styles from '../styles/Home.module.css'
-import { ButtonProps } from './types';
+import { ButtonProps } from '../types/types';
 
 const buttonContent: ButtonProps[] = [
   {
@@ -36,7 +36,7 @@ export default function Home() {
         <div className={styles.body}>
           <div className={styles.largeText}>
             <div className={styles.whiteText}>
-              Hello, I'm
+              Hello, I&apos;m
             </div>
             <div className={styles.greenText}>
               Tom
@@ -46,7 +46,7 @@ export default function Home() {
             I write code and design things sometimes
           </div>
           <div className={styles.buttonContainer}>
-          {...buttonContent.map((b) => <Button content={b.content} destination={b.destination}/>)}
+          {...buttonContent.map((b, i) => <Button key={i} content={b.content} destination={b.destination}/>)}
         </div>
         </div>
 
