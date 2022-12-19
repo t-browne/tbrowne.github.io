@@ -39,7 +39,7 @@ export default function Home() {
               Hello, I&apos;m
             </div>
             <div className={styles.greenText}>
-              Tom
+              &nbsp;Tom&nbsp;
             </div>
           </div>
           <div className={styles.smallText}>
