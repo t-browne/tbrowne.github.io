@@ -12,6 +12,5 @@
 }
 
 .button:hover {
-    background-color: #b4b4b4;
-    color: #282830;
+    border-color:#00dcb4;
 }
