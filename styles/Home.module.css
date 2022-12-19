@@ -4,25 +4,49 @@
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
-  min-height: 100vh;
+  background-color: #1c1c24;
+  width: 100vw;
+  height: 100vh;
 }
 
-.header {
-  width: 40vw;
-  height: fit-content;
-  padding: 8px;
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #282830;
+  backdrop-filter: blur(6px);
+  border-radius: 30px;
+  width: 50vw;
+  height: 50vh;
+}
+
+.largeText {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: fit-content;
+  font-size: 72px;
+}
+
+.whiteText {
+  color: #dedede;
+  padding-right: 4px;
+}
+
+.greenText {
+  color:#00dcb4
 }
 
 .buttonContainer {
-  width: 80vw;
   height: fit-content;
+  width: 60%;
   padding: 8px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
-/* Conic Gradient Animation */
 /* .thirteen::before {
   animation: 6s rotate linear infinite;
   width: 200%;
