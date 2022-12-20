@@ -9,22 +9,22 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const buttonContent: ButtonProps[] = [
   {
-    destination: '',
+    destination: 'https://mstdn.plus/@tom',
     content: 'Mastodon',
     icon: faMastodon,
   },
   {
-    destination: '',
+    destination: 'mailto:hello@tbrowne.me',
     content: 'Email',
     icon: faEnvelope
   },
   {
-    destination: '',
+    destination: 'https://www.instagram.com/browniesnlimonata/',
     content: 'Instagram',
     icon: faInstagram
   },
   {
-    destination: '',
+    destination: 'https://github.com/t-browne/',
     content: 'Github',
     icon: faGithub
   }
