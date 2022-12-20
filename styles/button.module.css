@@ -1,5 +1,7 @@
 .button {
     width: fit-content;
+    display: flex;
+    flex-direction: row;
     color: #b4b4b4;
     padding: 4px;
     padding-left: 16px;
@@ -9,6 +11,10 @@
     border-style: solid;
     border-radius: 10px;
     transition: ease .2s;
+}
+
+.buttonText {
+    padding-left: 4px;
 }
 
 .button:hover {

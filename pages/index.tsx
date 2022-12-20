@@ -3,23 +3,30 @@ import React from 'react';
 import Button from './button';
 import styles from '../styles/Home.module.css'
 import { ButtonProps } from '../types/types';
+import { faGithub, faInstagram, faMastodon  } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
 
 const buttonContent: ButtonProps[] = [
   {
     destination: '',
-    content: 'Mastodon'
+    content: 'Mastodon',
+    icon: faMastodon,
   },
   {
     destination: '',
-    content: 'Email'
+    content: 'Email',
+    icon: faEnvelope
   },
   {
     destination: '',
-    content: 'Instagram'
+    content: 'Instagram',
+    icon: faInstagram
   },
   {
     destination: '',
-    content: 'Github'
+    content: 'Github',
+    icon: faGithub
   }
 ]
 
@@ -46,7 +53,7 @@ export default function Home() {
             I write code and design things sometimes
           </div>
           <div className={styles.buttonContainer}>
-          {...buttonContent.map((b, i) => <Button key={i} content={b.content} destination={b.destination}/>)}
+          {...buttonContent.map((b, i) => <Button key={i} content={b.content} destination={b.destination} icon={b.icon}/>)}
         </div>
         </div>
 

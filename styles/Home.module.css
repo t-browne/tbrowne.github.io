@@ -20,6 +20,7 @@
   border-radius: 30px;
   width: 50vw;
   height: 50vh;
+  align-self: center;
 }
 
 .largeText {
