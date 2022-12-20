@@ -2,6 +2,7 @@
     width: fit-content;
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     color: #b4b4b4;
     margin-top: 8px;
     padding: 8px;
@@ -16,6 +17,10 @@
 
 .buttonText {
     padding-left: 4px;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
 }
 
 .iconContainer {
@@ -25,4 +30,10 @@
 .button:hover {
     border-color:#00dcb4;
     color:#00dcb4;
+}
+
+@media (max-width: 625px) {
+    .button {
+        min-width: 130px;
+    }
 }
