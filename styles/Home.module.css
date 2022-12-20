@@ -12,6 +12,16 @@
   width: 100vw;
   height: 100vh;
   font-family: 'OpenSans';
+  z-index: 0;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
 }
 
 .body {
@@ -29,6 +39,7 @@
   width: fit-content;
   height: fit-content;
   color: #dedede;
+  z-index: 3;
 }
 
 .largeText {
