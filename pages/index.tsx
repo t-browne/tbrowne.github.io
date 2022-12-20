@@ -4,7 +4,7 @@ import Button from './button';
 import styles from '../styles/Home.module.css'
 import { ButtonProps } from '../types/types';
 import { faGithub, faInstagram, faMastodon  } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 
 const buttonContent: ButtonProps[] = [
