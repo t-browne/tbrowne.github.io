@@ -15,7 +15,9 @@ const Button: React.FC<ButtonProps> = ({ destination, content, icon}) => {
         className={styles.button}
         onClick={(e) => handleButtonClick(e, destination)}
         href="#">
-          <FontAwesomeIcon icon={icon} />
+          <div className={styles.iconBox}>
+            <FontAwesomeIcon icon={icon} />
+          </div>
           <div className={styles.buttonText}>
             {content}
           </div>

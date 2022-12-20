@@ -18,6 +18,10 @@
     padding-left: 4px;
 }
 
+.iconContainer {
+    margin-bottom: -2px;
+}
+
 .button:hover {
     border-color:#00dcb4;
 }
