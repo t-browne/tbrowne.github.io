@@ -42,9 +42,11 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.body}>
           <div className={styles.largeText}>
-            <div className={styles.whiteText}>
-              Hello, I&apos;m&nbsp;
-            </div>
+            {
+            window.innerWidth < 400
+            ? <div className={styles.whiteText}>Hello, I&apos;m</div>
+            : <div className={styles.whiteText}>Hello, I&apos;m&nbsp;</div>
+            }
             <div className={styles.greenText}>
               Tom
             </div>
