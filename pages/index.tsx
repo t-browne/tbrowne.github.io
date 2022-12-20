@@ -43,7 +43,7 @@ export default function Home() {
         <div className={styles.body}>
           <div className={styles.largeText}>
             <div className={styles.whiteText}>
-              Hello, I&apos;m
+              Hello, I&apos;m&nbsp;
             </div>
             <div className={styles.greenText}>
               Tom
