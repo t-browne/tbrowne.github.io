@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'OpenSans';
+  src: url(//fonts.gstatic.com/s/googlesans/v5/4UaGrENHsxJlGDuGo1OIlL3Owp4.woff2);;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -6,10 +11,9 @@
   background-color: #1c1c24;
   width: 100vw;
   height: 100vh;
-  font-family: url(//fonts.gstatic.com/s/googlesans/v5/4UaGrENHsxJlGDuGo1OIlL3Owp4.woff2);
+  font-family: 'OpenSans';
   background-image: url('http://i.stack.imgur.com/kx8MT.gif');
   background-size: cover;
-
 }
 
 .body {
@@ -20,10 +24,12 @@
   background-color: #2828304d;
   backdrop-filter: blur(6px);
   border-radius: 30px;
-  width: 50vw;
-  height: 50vh;
-  min-width: fit-content;
-  min-height: fit-content;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  width: fit-content;
+  height: fit-content;
 }
 
 .largeText {
@@ -31,7 +37,7 @@
   flex-direction: row;
   justify-content: flex-start;
   width: fit-content;
-  font-size: 72px;
+  font-size: 96px;
   font-weight: bold;
 }
 
@@ -48,6 +54,7 @@
 
 .smallText {
   text-align: center;
+  font-size: 20px;
 }
 .buttonContainer {
   height: fit-content;
@@ -106,6 +113,9 @@
 @media (max-width: 970px) {
   .largeText {
     flex-direction: column;
+  }
+  .greenText {
+    text-align: center;
   }
 }
 
