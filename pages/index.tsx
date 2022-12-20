@@ -46,7 +46,7 @@ export default function Home() {
               Hello, I&apos;m
             </div>
             <div className={styles.greenText}>
-              &nbsp;Tom&nbsp;
+              Tom
             </div>
           </div>
           <div className={styles.smallText}>
