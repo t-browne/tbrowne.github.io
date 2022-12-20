@@ -23,6 +23,7 @@
   width: 50vw;
   height: 50vh;
   min-width: fit-content;
+  min-height: fit-content;
 }
 
 .largeText {
