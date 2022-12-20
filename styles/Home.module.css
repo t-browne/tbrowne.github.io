@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'OpenSans';
-  src: url(//fonts.gstatic.com/s/googlesans/v5/4UaGrENHsxJlGDuGo1OIlL3Owp4.woff2);;
+  src: url(https://fonts.gstatic.com/s/opensans/v34/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVI.woff2) format('woff2');
 }
 
 .main {
@@ -38,7 +38,7 @@
   justify-content: flex-start;
   width: fit-content;
   font-size: 96px;
-  font-weight: bold;
+  font-weight:900;
 }
 
 .whiteText {
@@ -58,33 +58,13 @@
 }
 .buttonContainer {
   height: fit-content;
-  width: 60%;
+  width: 90%;
   padding: 8px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-
-/* .thirteen::before {
-  animation: 6s rotate linear infinite;
-  width: 200%;
-  height: 200%;
-  background: var(--tile-border);
-} */
-
-/* Inner Square
-.thirteen::after {
-  inset: 0;
-  padding: 1px;
-  border-radius: var(--border-radius);
-  background: linear-gradient(
-    to bottom right,
-    rgba(var(--tile-start-rgb), 1),
-    rgba(var(--tile-end-rgb), 1)
-  );
-  background-clip: content-box;
-} */
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
