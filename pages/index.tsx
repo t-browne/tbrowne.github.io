@@ -14,11 +14,6 @@ const buttonContent: ButtonProps[] = [
     icon: faMastodon,
   },
   {
-    destination: 'mailto:hello@tbrowne.me',
-    content: 'Email',
-    icon: faEnvelope
-  },
-  {
     destination: 'https://www.instagram.com/browniesnlimonata/',
     content: 'Instagram',
     icon: faInstagram
@@ -27,6 +22,11 @@ const buttonContent: ButtonProps[] = [
     destination: 'https://github.com/t-browne/',
     content: 'Github',
     icon: faGithub
+  },
+  {
+    destination: 'mailto:hello@tbrowne.me',
+    content: 'Email',
+    icon: faEnvelope
   }
 ]
 
