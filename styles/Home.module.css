@@ -100,7 +100,6 @@
 }
 
 /* Mobile */
-
 @media (max-width: 970px) {
   .largeText {
     font-size: 64px;
