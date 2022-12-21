@@ -49,6 +49,7 @@
   width: fit-content;
   font-size: 96px;
   font-weight:900;
+  letter-spacing: -0.2rem;
 }
 
 .whiteText {
@@ -64,6 +65,7 @@
 .smallText {
   text-align: center;
   font-size: 32px;
+  letter-spacing: -0.05rem;
 }
 .buttonContainer {
   height: fit-content;
