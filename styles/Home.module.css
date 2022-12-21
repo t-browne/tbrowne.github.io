@@ -111,6 +111,10 @@
   .smallText {
     font-size: 24px;
   }
+  .buttonContainer {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media (max-width: 625px) {
