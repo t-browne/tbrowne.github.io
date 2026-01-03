@@ -1,26 +1,35 @@
-@font-face {
-  font-family: 'OpenSans';
-  src: url(https://fonts.gstatic.com/s/opensans/v34/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVI.woff2) format('woff2');
-}
-
 .main {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #1c1c24;
-  width: 100vw;
-  height: 100vh;
-  font-family: 'OpenSans';
+  background: linear-gradient(-45deg, #1c1c24, #182825, #22222e, #0f1c1a);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  width: 100%;
+  min-height: 100vh;
   z-index: 0;
+  position: relative;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .background {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   z-index: 1;
 }
 
@@ -155,4 +164,67 @@
   to {
     transform: rotate(0deg);
   }
+}
+
+.skeleton {
+  background: #3a3a45;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.skeleton::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.05),
+    transparent
+  );
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.skeletonTitle {
+  width: 300px;
+  height: 80px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+}
+
+.skeletonText {
+  width: 400px;
+  height: 32px;
+  margin-bottom: 32px;
+}
+
+.skeletonBtnContainer {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  justify-content: center;
+}
+
+.skeletonBtn {
+  width: 120px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+@media (max-width: 625px) {
+  .skeletonTitle { width: 200px; height: 50px; }
+  .skeletonText { width: 250px; height: 24px; }
+  .skeletonBtnContainer { flex-direction: column; align-items: center; }
 }

@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css'
 import { ButtonProps } from '../types/types';
 import { faGithub, faInstagram, faMastodon  } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-
+import { motion } from 'framer-motion';
 
 const buttonContent: ButtonProps[] = [
   {
@@ -30,6 +30,26 @@ const buttonContent: ButtonProps[] = [
   }
 ]
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.05,
+      delayChildren: 0.05
+    }
+  }
+};
+
+const itemVariants = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: { type: 'spring', stiffness: 150 }
+  }
+};
+
 export default function Home() {
 
   return (
@@ -40,18 +60,32 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.body}>
-          <div className={styles.largeText}>
+        
+        <motion.div 
+          className={styles.body}
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          
+          <motion.div className={styles.largeText} variants={itemVariants}>
             <div className={styles.whiteText}>Hello, I&apos;m</div>
             <div className={styles.greenText}>Tom</div>
-          </div>
-          <div className={styles.smallText}>
+          </motion.div>
+          
+          <motion.div className={styles.smallText} variants={itemVariants}>
             I write code and design things sometimes
-          </div>
+          </motion.div>
+          
           <div className={styles.buttonContainer}>
-          {...buttonContent.map((b, i) => <Button key={i} content={b.content} destination={b.destination} icon={b.icon}/>)}
-        </div>
-        </div>
+            {buttonContent.map((b, i) => (
+              <motion.div key={i} variants={itemVariants}>
+                <Button content={b.content} destination={b.destination} icon={b.icon}/>
+              </motion.div>
+            ))}
+          </div>
+
+        </motion.div>
 
       </main>
     </>

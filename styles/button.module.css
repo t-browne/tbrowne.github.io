@@ -9,10 +9,11 @@
     padding-left: 8px;
     padding-right: 8px;
     border: 2px;
-    border-color:#b4b4b4;
+    border-color: #b4b4b4;
     border-style: solid;
     border-radius: 10px;
     transition: ease .2s;
+    text-decoration: none; 
 }
 
 .buttonText {
